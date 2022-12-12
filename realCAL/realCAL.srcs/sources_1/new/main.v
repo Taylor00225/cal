@@ -24,10 +24,8 @@ module main(
     input clkin,
     input [3:0] key_in,
     output [3:0] key_out,
-//    output key_en,
     output [6:0] seg7,
-    output [1:0]seg_en,
-    output [7:0] led
+    output [1:0]seg_en
     );
 
     wire clk_100k,key_en;
@@ -44,7 +42,6 @@ module main(
     reg [7:0] num2 = 8'b00000000;
     reg [7:0] num3 = 8'b00000000;
     reg [7:0] outputnum = 0;
-    reg [7:0] led = 8'b00000000;
     integer sign = 0;//0 = +
     
     always @ (posedge clkin)
@@ -68,14 +65,14 @@ module main(
        begin
            case(key_value)         
                     8'b0111_0111:num<=4'b0001; //1
-                    8'b0111_1011:num<=4'b0010;
-                    8'b0111_1101:num<=4'b0011;
-                    8'b1011_0111:num<=4'b0100;
-                    8'b1011_1011:num<=4'b0101;
+                    8'b0111_1011:num<=4'b0010; //2
+                    8'b0111_1101:num<=4'b0011; //3
+                    8'b1011_0111:num<=4'b0100; //4
+                    8'b1011_1011:num<=4'b0101; //5
                     8'b1011_1101:num<=4'b0110; //6
-                    8'b1101_0111:num<=4'b0111;
+                    8'b1101_0111:num<=4'b0111; //6
                     8'b1101_1011:num<=4'b1000; //8
-                    8'b1101_1101:num<=4'b1001;
+                    8'b1101_1101:num<=4'b1001; //7
                     8'b1110_1011:num<=4'b0000; //0
                     8'b0111_1110:num<=4'b1110; //+
                     8'b1011_1110:num<=4'b1101; //-
@@ -86,7 +83,7 @@ module main(
             case(num)
                 4'b1110:begin sign <= 0;flag1 <= 2;end//input sign +
                 4'b1101:begin sign <= 1;flag1 <= 2;end//input sign - 
-                4'b1100:begin sign <= 2;flag1 <= 3;end
+                4'b1100:begin sign <= 2;flag1 <= 3;end// =
                 4'b1111:begin sign <= sign;flag1 <= flag1;end
                 default : 
                     begin
@@ -131,7 +128,6 @@ module main(
             begin
                 outputnum = num3;
             end
-            led = outputnum;
         end
         
     always @(posedge clk_new)
@@ -151,7 +147,7 @@ module main(
                 4'b0111: seg7<=7'b0000111;
                 4'b1000: seg7<=7'b1111111;
                 4'b1001: seg7<=7'b1101111;
-                default: seg7<=7'b0000000;
+                default: seg7<=7'b1000000;
             endcase
         end
         if (flag == 1)
@@ -169,12 +165,9 @@ module main(
                 4'b0111: seg7<=7'b0000111;
                 4'b1000: seg7<=7'b1111111;
                 4'b1001: seg7<=7'b1101111;
-                default: seg7<=7'b0000000;
+                default: seg7<=7'b1000000;
             endcase
-        end        
-
-        
-        
+        end  
 
     end 
 endmodule 

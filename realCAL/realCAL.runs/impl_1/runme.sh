@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=D:/Xilinx/Vivado/2022.1/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2022.1/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2022.1/bin
+  PATH=F:/Xilinx/Vivado/2022.1/ids_lite/ISE/bin/nt64;F:/Xilinx/Vivado/2022.1/ids_lite/ISE/lib/nt64:F:/Xilinx/Vivado/2022.1/bin
 else
-  PATH=D:/Xilinx/Vivado/2022.1/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2022.1/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2022.1/bin:$PATH
+  PATH=F:/Xilinx/Vivado/2022.1/ids_lite/ISE/bin/nt64;F:/Xilinx/Vivado/2022.1/ids_lite/ISE/lib/nt64:F:/Xilinx/Vivado/2022.1/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Xilinx/Project/realCAL/realCAL.runs/impl_1'
+HD_PWD='G:/VerilogHDL/cal/realCAL/realCAL.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
+/bin/touch .init_design.begin.rst
 EAStep vivado -log main.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source main.tcl -notrace
 
 

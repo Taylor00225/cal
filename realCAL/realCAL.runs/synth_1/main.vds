@@ -2,17 +2,17 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Sun Dec 11 16:12:12 2022
-# Process ID: 22708
-# Current directory: D:/Xilinx/Project/realCAL/realCAL.runs/synth_1
+# Start of session at: Tue Dec 13 01:09:23 2022
+# Process ID: 27984
+# Current directory: G:/VerilogHDL/cal/realCAL/realCAL.runs/synth_1
 # Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
-# Log file: D:/Xilinx/Project/realCAL/realCAL.runs/synth_1/main.vds
-# Journal file: D:/Xilinx/Project/realCAL/realCAL.runs/synth_1\vivado.jou
-# Running On: ElcKeT, OS: Windows, CPU Frequency: 2895 MHz, CPU Physical cores: 16, Host memory: 16495 MB
+# Log file: G:/VerilogHDL/cal/realCAL/realCAL.runs/synth_1/main.vds
+# Journal file: G:/VerilogHDL/cal/realCAL/realCAL.runs/synth_1\vivado.jou
+# Running On: LAPTOP-DFFR50AK, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 4, Host memory: 17041 MB
 #-----------------------------------------------------------
 source main.tcl -notrace
-Command: read_checkpoint -auto_incremental -incremental D:/Xilinx/Project/realCAL/realCAL.srcs/utils_1/imports/synth_1/main.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from D:/Xilinx/Project/realCAL/realCAL.srcs/utils_1/imports/synth_1/main.dcp for incremental synthesis
+Command: read_checkpoint -auto_incremental -incremental G:/VerilogHDL/cal/realCAL/realCAL.srcs/utils_1/imports/synth_1/main.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from G:/VerilogHDL/cal/realCAL/realCAL.srcs/utils_1/imports/synth_1/main.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top main -part xc7a35tcsg324-1
 Starting synth_design
@@ -23,75 +23,73 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 23396
-WARNING: [Synth 8-9971] redeclaration of ansi port 'done' is not allowed [D:/Xilinx/Project/realCAL/realCAL.srcs/sources_1/new/bounce_time.v:29]
-WARNING: [Synth 8-9971] redeclaration of ansi port 'key_out' is not allowed [D:/Xilinx/Project/realCAL/realCAL.srcs/sources_1/new/keyboard.v:31]
-WARNING: [Synth 8-9971] redeclaration of ansi port 'key_en' is not allowed [D:/Xilinx/Project/realCAL/realCAL.srcs/sources_1/new/keyboard.v:32]
-WARNING: [Synth 8-9971] redeclaration of ansi port 'key_value' is not allowed [D:/Xilinx/Project/realCAL/realCAL.srcs/sources_1/new/keyboard.v:34]
-WARNING: [Synth 8-9971] redeclaration of ansi port 'clkout_100k' is not allowed [D:/Xilinx/Project/realCAL/realCAL.srcs/sources_1/new/tt.v:28]
-WARNING: [Synth 8-9971] redeclaration of ansi port 'seg7' is not allowed [D:/Xilinx/Project/realCAL/realCAL.srcs/sources_1/new/main.v:36]
-WARNING: [Synth 8-9971] redeclaration of ansi port 'seg_en' is not allowed [D:/Xilinx/Project/realCAL/realCAL.srcs/sources_1/new/main.v:38]
-WARNING: [Synth 8-9971] redeclaration of ansi port 'led' is not allowed [D:/Xilinx/Project/realCAL/realCAL.srcs/sources_1/new/main.v:47]
+INFO: [Synth 8-7075] Helper process launched with PID 16120
+WARNING: [Synth 8-9971] redeclaration of ansi port 'done' is not allowed [G:/VerilogHDL/cal/realCAL/realCAL.srcs/sources_1/new/bounce_time.v:29]
+WARNING: [Synth 8-9971] redeclaration of ansi port 'key_out' is not allowed [G:/VerilogHDL/cal/realCAL/realCAL.srcs/sources_1/new/keyboard.v:31]
+WARNING: [Synth 8-9971] redeclaration of ansi port 'key_en' is not allowed [G:/VerilogHDL/cal/realCAL/realCAL.srcs/sources_1/new/keyboard.v:32]
+WARNING: [Synth 8-9971] redeclaration of ansi port 'key_value' is not allowed [G:/VerilogHDL/cal/realCAL/realCAL.srcs/sources_1/new/keyboard.v:34]
+WARNING: [Synth 8-9971] redeclaration of ansi port 'clkout_100k' is not allowed [G:/VerilogHDL/cal/realCAL/realCAL.srcs/sources_1/new/tt.v:28]
+WARNING: [Synth 8-9971] redeclaration of ansi port 'seg7' is not allowed [G:/VerilogHDL/cal/realCAL/realCAL.srcs/sources_1/new/main.v:34]
+WARNING: [Synth 8-9971] redeclaration of ansi port 'seg_en' is not allowed [G:/VerilogHDL/cal/realCAL/realCAL.srcs/sources_1/new/main.v:36]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1854.129 ; gain = 152.348
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1285.629 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'main' [D:/Xilinx/Project/realCAL/realCAL.srcs/sources_1/new/main.v:23]
-INFO: [Synth 8-6157] synthesizing module 'tt' [D:/Xilinx/Project/realCAL/realCAL.srcs/sources_1/new/tt.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'tt' (0#1) [D:/Xilinx/Project/realCAL/realCAL.srcs/sources_1/new/tt.v:23]
-INFO: [Synth 8-6157] synthesizing module 'keyboard' [D:/Xilinx/Project/realCAL/realCAL.srcs/sources_1/new/keyboard.v:23]
-INFO: [Synth 8-6157] synthesizing module 'bounce_time' [D:/Xilinx/Project/realCAL/realCAL.srcs/sources_1/new/bounce_time.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'bounce_time' (0#1) [D:/Xilinx/Project/realCAL/realCAL.srcs/sources_1/new/bounce_time.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'keyboard' (0#1) [D:/Xilinx/Project/realCAL/realCAL.srcs/sources_1/new/keyboard.v:23]
-WARNING: [Synth 8-6090] variable 'num3' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Xilinx/Project/realCAL/realCAL.srcs/sources_1/new/main.v:111]
-WARNING: [Synth 8-6090] variable 'num3' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Xilinx/Project/realCAL/realCAL.srcs/sources_1/new/main.v:114]
-WARNING: [Synth 8-6090] variable 'num3' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Xilinx/Project/realCAL/realCAL.srcs/sources_1/new/main.v:119]
-INFO: [Synth 8-6155] done synthesizing module 'main' (0#1) [D:/Xilinx/Project/realCAL/realCAL.srcs/sources_1/new/main.v:23]
-WARNING: [Synth 8-6014] Unused sequential element led_reg was removed.  [D:/Xilinx/Project/realCAL/realCAL.srcs/sources_1/new/main.v:134]
+INFO: [Synth 8-6157] synthesizing module 'main' [G:/VerilogHDL/cal/realCAL/realCAL.srcs/sources_1/new/main.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tt' [G:/VerilogHDL/cal/realCAL/realCAL.srcs/sources_1/new/tt.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'tt' (0#1) [G:/VerilogHDL/cal/realCAL/realCAL.srcs/sources_1/new/tt.v:23]
+INFO: [Synth 8-6157] synthesizing module 'keyboard' [G:/VerilogHDL/cal/realCAL/realCAL.srcs/sources_1/new/keyboard.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bounce_time' [G:/VerilogHDL/cal/realCAL/realCAL.srcs/sources_1/new/bounce_time.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bounce_time' (0#1) [G:/VerilogHDL/cal/realCAL/realCAL.srcs/sources_1/new/bounce_time.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'keyboard' (0#1) [G:/VerilogHDL/cal/realCAL/realCAL.srcs/sources_1/new/keyboard.v:23]
+WARNING: [Synth 8-6090] variable 'num3' is written by both blocking and non-blocking assignments, entire logic could be removed [G:/VerilogHDL/cal/realCAL/realCAL.srcs/sources_1/new/main.v:108]
+WARNING: [Synth 8-6090] variable 'num3' is written by both blocking and non-blocking assignments, entire logic could be removed [G:/VerilogHDL/cal/realCAL/realCAL.srcs/sources_1/new/main.v:111]
+WARNING: [Synth 8-6090] variable 'num3' is written by both blocking and non-blocking assignments, entire logic could be removed [G:/VerilogHDL/cal/realCAL/realCAL.srcs/sources_1/new/main.v:116]
+INFO: [Synth 8-6155] done synthesizing module 'main' (0#1) [G:/VerilogHDL/cal/realCAL/realCAL.srcs/sources_1/new/main.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1940.805 ; gain = 239.023
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1285.629 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1958.691 ; gain = 256.910
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1285.629 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1958.691 ; gain = 256.910
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1285.629 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1958.691 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1285.629 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [D:/Xilinx/Project/realCAL/realCAL.srcs/constrs_1/new/cons.xdc]
-Finished Parsing XDC File [D:/Xilinx/Project/realCAL/realCAL.srcs/constrs_1/new/cons.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx/Project/realCAL/realCAL.srcs/constrs_1/new/cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Parsing XDC File [G:/VerilogHDL/cal/realCAL/realCAL.srcs/constrs_1/new/cons.xdc]
+Finished Parsing XDC File [G:/VerilogHDL/cal/realCAL/realCAL.srcs/constrs_1/new/cons.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [G:/VerilogHDL/cal/realCAL/realCAL.srcs/constrs_1/new/cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2071.391 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1321.867 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2071.391 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1321.867 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2071.391 ; gain = 369.609
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1321.867 ; gain = 36.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2071.391 ; gain = 369.609
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1321.867 ; gain = 36.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2071.391 ; gain = 369.609
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1321.867 ; gain = 36.238
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'flag_reg' in module 'keyboard'
 INFO: [Synth 8-802] inferred FSM for state register 'flag_reg' in module 'main'
@@ -118,7 +116,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'flag_reg' using encoding '
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'flag_reg' using encoding 'sequential' in module 'main'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2071.391 ; gain = 369.609
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1321.867 ; gain = 36.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -172,25 +170,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2071.391 ; gain = 369.609
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1321.867 ; gain = 36.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2071.391 ; gain = 369.609
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1321.867 ; gain = 36.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2071.391 ; gain = 369.609
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1321.867 ; gain = 36.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2071.391 ; gain = 369.609
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1321.867 ; gain = 36.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -208,37 +206,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2071.391 ; gain = 369.609
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1321.867 ; gain = 36.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2071.391 ; gain = 369.609
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1321.867 ; gain = 36.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2071.391 ; gain = 369.609
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1321.867 ; gain = 36.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2071.391 ; gain = 369.609
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1321.867 ; gain = 36.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2071.391 ; gain = 369.609
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1321.867 ; gain = 36.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2071.391 ; gain = 369.609
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1321.867 ; gain = 36.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -265,29 +263,29 @@ Report Cell Usage:
 |9     |FDRE   |   157|
 |10    |FDSE   |     1|
 |11    |IBUF   |     5|
-|12    |OBUF   |    21|
+|12    |OBUF   |    13|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2071.391 ; gain = 369.609
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1321.867 ; gain = 36.238
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 2071.391 ; gain = 256.910
-Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2071.391 ; gain = 369.609
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 1321.867 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1321.867 ; gain = 36.238
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2071.391 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1321.867 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2071.391 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1321.867 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: b4592af3
+Synth Design complete, checksum: 18080516
 INFO: [Common 17-83] Releasing license: Synthesis
-33 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+33 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2071.391 ; gain = 369.609
-INFO: [Common 17-1381] The checkpoint 'D:/Xilinx/Project/realCAL/realCAL.runs/synth_1/main.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1321.867 ; gain = 36.238
+INFO: [Common 17-1381] The checkpoint 'G:/VerilogHDL/cal/realCAL/realCAL.runs/synth_1/main.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Dec 11 16:13:00 2022...
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 13 01:10:02 2022...

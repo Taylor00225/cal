@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "D:/Xilinx/Project/realCAL/realCAL.runs/synth_1/main.tcl"
+  variable script "G:/VerilogHDL/cal/realCAL/realCAL.runs/synth_1/main.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,26 +70,27 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 4
+set_param chipscope.maxJobs 2
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir D:/Xilinx/Project/realCAL/realCAL.cache/wt [current_project]
-set_property parent.project_path D:/Xilinx/Project/realCAL/realCAL.xpr [current_project]
+set_property webtalk.parent_dir G:/VerilogHDL/cal/realCAL/realCAL.cache/wt [current_project]
+set_property parent.project_path G:/VerilogHDL/cal/realCAL/realCAL.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo d:/Xilinx/Project/realCAL/realCAL.cache/ip [current_project]
+set_property ip_output_repo g:/VerilogHDL/cal/realCAL/realCAL.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  D:/Xilinx/Project/realCAL/realCAL.srcs/sources_1/new/bounce_time.v
-  D:/Xilinx/Project/realCAL/realCAL.srcs/sources_1/new/keyboard.v
-  D:/Xilinx/Project/realCAL/realCAL.srcs/sources_1/new/tt.v
-  D:/Xilinx/Project/realCAL/realCAL.srcs/sources_1/new/main.v
+  G:/VerilogHDL/cal/realCAL/realCAL.srcs/sources_1/new/bounce_time.v
+  G:/VerilogHDL/cal/realCAL/realCAL.srcs/sources_1/new/keyboard.v
+  G:/VerilogHDL/cal/realCAL/realCAL.srcs/sources_1/new/tt.v
+  G:/VerilogHDL/cal/realCAL/realCAL.srcs/sources_1/new/main.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -100,12 +101,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/Xilinx/Project/realCAL/realCAL.srcs/constrs_1/new/cons.xdc
-set_property used_in_implementation false [get_files D:/Xilinx/Project/realCAL/realCAL.srcs/constrs_1/new/cons.xdc]
+read_xdc G:/VerilogHDL/cal/realCAL/realCAL.srcs/constrs_1/new/cons.xdc
+set_property used_in_implementation false [get_files G:/VerilogHDL/cal/realCAL/realCAL.srcs/constrs_1/new/cons.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental D:/Xilinx/Project/realCAL/realCAL.srcs/utils_1/imports/synth_1/main.dcp
+read_checkpoint -auto_incremental -incremental G:/VerilogHDL/cal/realCAL/realCAL.srcs/utils_1/imports/synth_1/main.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
